@@ -12,7 +12,7 @@ namespace AspNetCore.ViewComponents.ExternalComponents
     {
         public async Task<IViewComponentResult> InvokeAsync(object param)
         {
-            return View(param);
+            return await Task.FromResult(View(param));
         }
     }
 }

@@ -12,7 +12,7 @@ namespace AspNetCore.ViewComponents.Mvc.ViewComponents
     {
         public async Task<IViewComponentResult> InvokeAsync(object param)
         {
-            return View(param);
+            return await Task.FromResult(View(param));
         }
     }
 }
