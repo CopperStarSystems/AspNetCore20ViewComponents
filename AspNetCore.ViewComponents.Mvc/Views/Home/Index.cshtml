@@ -9,7 +9,11 @@
 <body>
     <div>
         <h1>Hello from Home/Index</h1>
+        <hr />
+        <h1>Invoke Local Component with "A123" as arguments</h1>
         @await Component.InvokeAsync("Local", "A123")
+        <hr />
+        <h1>Invoke External Component with "Some Parameter" as arguments</h1>
         @await Component.InvokeAsync("External", "Some Parameter")
     </div>
 </body>
